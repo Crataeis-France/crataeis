@@ -1,0 +1,794 @@
+{
+  "version": "2.6",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Crataeis Landing",
+      "clip": true,
+      "width": 1440,
+      "fill": "#0A0B0D",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        32,
+        0,
+        0,
+        0
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "OsRlW",
+          "name": "header",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#0A0B0D",
+          "padding": [
+            0,
+            80,
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZeoFR",
+              "name": "leftBlock",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "n79pv",
+                  "name": "logo",
+                  "fill": "#FFFFFF",
+                  "content": "Crataeis",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yo4pa",
+              "name": "rightBlock",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8vTJF",
+                  "name": "langBtn",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#16181C",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "TXMLH",
+                      "name": "langIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "languages",
+                      "iconFontFamily": "lucide",
+                      "fill": "#94A3B8"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uzzgA",
+                  "name": "themeBtn",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#16181C",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Q5RRL",
+                      "name": "themeIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "moon",
+                      "iconFontFamily": "lucide",
+                      "fill": "#94A3B8"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qNFpO",
+          "name": "CTA row",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            12,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "nnhAG",
+              "name": "ctaBtn",
+              "fill": "#0D9488",
+              "cornerRadius": 10,
+              "padding": [
+                18,
+                40
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jKi6P",
+                  "name": "ctaTxt",
+                  "fill": "#0A0B0D",
+                  "content": "Get in touch",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "28VEW",
+          "name": "hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            48,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "urgXL",
+              "name": "heroHead",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Transform your business with expert tech",
+              "lineHeight": 1.15,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 56,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "QiA2O",
+              "name": "heroSub",
+              "fill": "#64748B",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "content": "Custom solutions for growth-focused companies",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "q0YFH",
+          "name": "servicesWrap",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            40,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "WLkqH",
+              "name": "servicesGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kJ86W",
+                  "name": "card1",
+                  "width": "fill_container",
+                  "fill": "#16181C",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Sph9h",
+                      "name": "icon1",
+                      "width": 36,
+                      "height": 36,
+                      "iconFontName": "globe",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0D9488"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BF5pk",
+                      "name": "card1Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "6HCXh",
+                          "name": "card1Title",
+                          "fill": "#FFFFFF",
+                          "content": "Custom websites",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "4c7PA",
+                          "name": "card1Desc",
+                          "fill": "#94A3B8",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Bespoke web experiences from landing pages to full-scale apps.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "3Jkvt",
+                  "name": "card2",
+                  "width": "fill_container",
+                  "fill": "#16181C",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "08zly",
+                      "name": "icon2",
+                      "width": 36,
+                      "height": 36,
+                      "iconFontName": "trending-up",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0D9488"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ESOi3",
+                      "name": "card2Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rUbAk",
+                          "name": "card2Title",
+                          "fill": "#FFFFFF",
+                          "content": "Google SEO & analytics",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Zk6i5",
+                          "name": "card2Desc",
+                          "fill": "#94A3B8",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Get found and measure what matters with SEO and analytics.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fxL2h",
+                  "name": "card3",
+                  "width": "fill_container",
+                  "fill": "#16181C",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "I4dvD",
+                      "name": "icon3",
+                      "width": 36,
+                      "height": 36,
+                      "iconFontName": "shopping-bag",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0D9488"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ztVC6",
+                      "name": "card3Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Dvl2Y",
+                          "name": "card3Title",
+                          "fill": "#FFFFFF",
+                          "content": "Shopify integration",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NPQTc",
+                          "name": "card3Desc",
+                          "fill": "#94A3B8",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Launch and scale your store with themes, apps, and support.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Y81lN",
+                  "name": "card4",
+                  "width": "fill_container",
+                  "fill": "#16181C",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "fPhp5",
+                      "name": "icon4",
+                      "width": 36,
+                      "height": 36,
+                      "iconFontName": "rocket",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0D9488"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "0lqDG",
+                      "name": "card4Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lkNi1",
+                          "name": "card4Title",
+                          "fill": "#FFFFFF",
+                          "content": "Business setup online",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "91ZsH",
+                          "name": "card4Desc",
+                          "fill": "#94A3B8",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Domain, hosting, branding, and launch—solid foundation from day one.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VKfzJ",
+          "name": "Image + copy section",
+          "width": "fill_container",
+          "height": 420,
+          "gap": 48,
+          "padding": [
+            48,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "nEFYD",
+              "name": "Website image placeholder",
+              "width": 720,
+              "height": 380,
+              "fill": "#16181C",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g79MZ",
+                  "name": "imgLabel",
+                  "fill": "#64748B",
+                  "content": "Modern website screenshot",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fr0K3",
+              "name": "textCol",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "43oqq",
+                  "name": "sectionHead",
+                  "fill": "#FFFFFF",
+                  "content": "Custom websites that convert",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "ToNr7",
+                  "name": "sectionBody",
+                  "fill": "#94A3B8",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "tMXQA",
+                  "name": "sectionHint",
+                  "fill": "#64748B",
+                  "content": "(Animate this block on scroll in implementation)",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "9qMQk",
+          "name": "Google SEO banner",
+          "width": "fill_container",
+          "fill": "#0D9488",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            48,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "vSJPM",
+              "name": "bannerHead",
+              "fill": "#FFFFFF",
+              "content": "Get found. Measure what matters.",
+              "fontFamily": "Inter",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "vPSYc",
+              "name": "bannerSub",
+              "fill": "#0A0B0D",
+              "textGrowth": "fixed-width",
+              "width": 720,
+              "content": "Google SEO & Analytics — strategy, setup, and data-driven decisions for sustainable growth. We help you rank higher, track what matters, and turn insights into action.",
+              "lineHeight": 1.45,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18
+            },
+            {
+              "type": "text",
+              "id": "s1ioD",
+              "name": "bannerLine2",
+              "fill": "#0A0B0D",
+              "textGrowth": "fixed-width",
+              "width": 680,
+              "content": "From keyword research and on-page optimization to Google Analytics 4 and Search Console—we set you up to get found and measure results.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "05b4S",
+          "name": "Shopify + Business setup",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            32,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "eIYJM",
+              "name": "leftCol",
+              "width": "fill_container",
+              "fill": "#16181C",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "X4Fiw",
+                  "name": "Shopify image placeholder",
+                  "width": "fill_container",
+                  "height": 220,
+                  "fill": "#0F172A",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "buDOT",
+                      "name": "shopifyImgLabel",
+                      "fill": "#64748B",
+                      "content": "Image placeholder",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "fbPQd",
+                  "name": "shopifyHead",
+                  "fill": "#FFFFFF",
+                  "content": "Shopify integration",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "ntnc5",
+                  "name": "shopifyBody",
+                  "fill": "#94A3B8",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Launch and scale your store with custom themes, app integrations, and checkout optimization. We handle setup, migrations, and ongoing support so you can focus on selling.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "phDaX",
+              "name": "rightCol",
+              "width": "fill_container",
+              "fill": "#16181C",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RpnHa",
+                  "name": "Business setup image placeholder",
+                  "width": "fill_container",
+                  "height": 220,
+                  "fill": "#0F172A",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ww2f9",
+                      "name": "bizImgLabel",
+                      "fill": "#64748B",
+                      "content": "Image placeholder",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "uEM5H",
+                  "name": "bizHead",
+                  "fill": "#FFFFFF",
+                  "content": "Business setup online",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "9R4z3",
+                  "name": "bizBody",
+                  "fill": "#94A3B8",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "From domain and hosting to branding and first launch. We get your business online with a solid foundation—so you can start reaching customers from day one.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xz0b6",
+          "name": "Footer spacer",
+          "width": "fill_container",
+          "height": "fill_container"
+        },
+        {
+          "type": "frame",
+          "id": "V6Lql",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#12141A",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            56,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "mkS7L",
+              "name": "footerCta",
+              "fill": "#0D9488",
+              "cornerRadius": 10,
+              "padding": [
+                18,
+                40
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZlVo5",
+                  "name": "footerCtaTxt",
+                  "fill": "#0A0B0D",
+                  "content": "Get in touch",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Xahsa",
+              "name": "footerBottom",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mfMfa",
+                  "name": "footerCopyright",
+                  "fill": "#64748B",
+                  "content": "© 2026 Crataeis",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "8Hiag",
+                  "name": "footerPrivacy",
+                  "fill": "#94A3B8",
+                  "content": "Privacy policy",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
