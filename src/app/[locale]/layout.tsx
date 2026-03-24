@@ -3,6 +3,8 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { Footer } from "@/components/Footer";
+import { Navigation } from "@/components/Navigation";
 // i18n
 import { routing } from "@/i18n/routing";
 
@@ -42,9 +44,12 @@ export default async function LocaleLayout({ children, params }: Props) {
   setRequestLocale(locale);
   const messages = await getMessages();
 
+
   return (
     <NextIntlClientProvider messages={messages}>
+      <Navigation />
       {children}
+      <Footer />
     </NextIntlClientProvider>
   );
 }

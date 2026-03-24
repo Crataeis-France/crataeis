@@ -1,6 +1,12 @@
-import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+import {
+  Plus_Jakarta_Sans,
+  JetBrains_Mono,
+  Space_Grotesk,
+  Inter,
+} from "next/font/google";
 import { headers } from "next/headers";
-// Styles
+// Styles — tailwind import lives in .css so Sass never sees deprecated @import
+import "./tailwind.css";
 import "./globals.scss";
 // components
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -17,6 +23,16 @@ const fontMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
+const fontMarketingHeadline = Space_Grotesk({
+  variable: "--font-marketing-headline",
+  subsets: ["latin"],
+});
+
+const fontMarketingBody = Inter({
+  variable: "--font-marketing-body",
+  subsets: ["latin"],
+});
+
 export default async function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +43,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
+      <body
+        className={`${fontSans.variable} ${fontMono.variable} ${fontMarketingHeadline.variable} ${fontMarketingBody.variable} antialiased`}
+      >
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

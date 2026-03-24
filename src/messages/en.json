@@ -4,6 +4,90 @@
     "description": "Crataeis – modern web experience"
   },
   "HomePage": {
-    "title": "Hello World"
+    "metadata": {
+      "title": "Digital Gallery of Expertise",
+      "description": "Bridging craftsmanship and digital precision — gallery storefronts, consulting, and growth for creative studios."
+    },
+    "nav": {
+      "services": "Services",
+      "insights": "Insights",
+      "about": "About",
+      "consultation": "Consultation",
+      "languageEn": "EN",
+      "languageFr": "FR",
+      "languageSelectAria": "Language"
+    },
+    "hero": {
+      "imageAlt": "Abstract, high-end digital art backdrop",
+      "titleLine1": "Elevating the",
+      "titleHighlight": "Modern Artisan.",
+      "description": "Bridging the gap between raw craftsmanship and technological precision. We build digital legacies for the creative vanguard.",
+      "primaryCta": "Explore Services",
+      "secondaryCta": "Book a Consultation"
+    },
+    "services": {
+      "eyebrow": "The Framework",
+      "title": "Our Core Services",
+      "viewDetails": "View Details",
+      "items": {
+        "web": {
+          "title": "Web Design & Development",
+          "description": "Bespoke digital experiences built with precision, performance, and aesthetic excellence."
+        },
+        "consulting": {
+          "title": "Tech Consulting",
+          "description": "Strategic guidance on digital infrastructure to streamline your studio operations and growth."
+        },
+        "seo": {
+          "title": "SEO & AEO Strategies",
+          "description": "Optimizing your brand for search engines and AI answer engines to maximize organic discovery."
+        },
+        "googleBusiness": {
+          "title": "Google Business Consulting",
+          "description": "Maximizing local presence and reputation through professional Google Business profile management."
+        }
+      }
+    },
+    "craft": {
+      "imageAlt": "Handcrafted ceramics on wooden racks, cinematic black and white",
+      "eyebrow": "Preserving the Soul of Your Craft",
+      "title": "Infrastructure for the",
+      "titleHighlight": "Master Maker.",
+      "description": "For the ceramicist at the wheel and the iron worker at the forge, the digital world often feels like noise. Crataeis builds the invisible digital infrastructure—gallery storefronts, inventory management, and technical SEO—allowing you to stay focused on the fire and the clay.",
+      "bullet1": "Online Gallery Storefronts & Curated Portfolios",
+      "bullet2": "Specialized Workflows for Physical One-of-a-Kind Products",
+      "bullet3": "Invisible Infrastructure & Logistics Management",
+      "cta": "Learn More"
+    },
+    "impact": {
+      "eyebrow": "Strategic Authority",
+      "title": "The Impact of",
+      "titleHighlight": "Digital Growth",
+      "intro": "Precision marketing is the difference between a hidden studio and a global destination. The metrics of modern discovery reveal the raw power of strategic digital presence.",
+      "metrics": {
+        "m1": {
+          "value": "78%",
+          "body": "Of location-based mobile searches culminate in an <emphasis>offline purchase.</emphasis>"
+        },
+        "m2": {
+          "value": "9x",
+          "body": "Higher closing rate for SEO leads (14.6%) compared to outbound methods (1.7%)."
+        },
+        "m3": {
+          "value": "120%",
+          "body": "Surge in conversions triggered by a minor star-rating increase (from 3.5 to 3.7)."
+        },
+        "m4": {
+          "value": "1,000%",
+          "body": "More traffic is driven by SEO than by organic social media channels."
+        }
+      }
+    },
+    "footer": {
+      "rights": "Crataeis. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "backToTop": "Back to Top"
+    }
   }
 }
