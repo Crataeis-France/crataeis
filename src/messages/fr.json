@@ -4,6 +4,90 @@
     "description": "Crataeis – expérience web moderne"
   },
   "HomePage": {
-    "title": "Bonjour le monde"
+    "metadata": {
+      "title": "Galerie numérique d'expertise",
+      "description": "Relier artisanat et précision numérique — vitrines, conseil et croissance pour les ateliers créatifs."
+    },
+    "nav": {
+      "services": "Services",
+      "insights": "Perspectives",
+      "about": "À propos",
+      "consultation": "Consultation",
+      "languageEn": "EN",
+      "languageFr": "FR",
+      "languageSelectAria": "Langue"
+    },
+    "hero": {
+      "imageAlt": "Fond visuel abstrait haut de gamme",
+      "titleLine1": "Savoir-faire numérique pour",
+      "titleHighlight": "l'artisan moderne.",
+      "description": "Une précision technique au service de l’âme créative. Nous bâtissons des héritages numériques pour les artisans qui placent la qualité au-dessus de tout.",
+      "primaryCta": "Découvrir les services",
+      "secondaryCta": "Réserver une consultation"
+    },
+    "services": {
+      "eyebrow": "Notre façon de créer",
+      "title": "Nos services",
+      "viewDetails": "Voir les détails",
+      "items": {
+        "web": {
+          "title": "Design & développement web",
+          "description": "Des expériences numériques sur mesure, pensées pour la performance, l’esthétique et l’excellence technique."
+        },
+        "consulting": {
+          "title": "Conseil tech",
+          "description": "Une feuille de route claire pour votre infrastructure digitale afin d’accompagner les opérations et la croissance de votre atelier."
+        },
+        "seo": {
+          "title": "Stratégies SEO & AEO",
+          "description": "Optimiser votre marque pour les moteurs de recherche et les moteurs de réponses IA afin d’accroître la découverte organique."
+        },
+        "googleBusiness": {
+          "title": "Conseil Google Business",
+          "description": "Renforcer votre présence locale et votre réputation grâce à une gestion professionnelle du profil Google Business."
+        }
+      }
+    },
+    "craft": {
+      "imageAlt": "Céramiques artisanales sur des étagères en bois, noir et blanc cinématographique",
+      "eyebrow": "Préserver l’âme de votre métier",
+      "title": "Une infrastructure pour le",
+      "titleHighlight": "maître faiseur.",
+      "description": "Né dans un studio, un atelier ou une forge, votre artisanat mérite une présence numérique aussi intentionnelle que votre art. Nous bâtissons les systèmes — des sites web de niveau galerie à la visibilité en recherche locale — qui relient votre espace de travail physique au marché mondial.",
+      "bullet1": "Vitrines galerie & portfolios curatoriaux en ligne",
+      "bullet2": "Flux de travail adaptés aux pièces uniques physiques",
+      "bullet3": "Infrastructure discrète & logistique",
+      "cta": "En savoir plus"
+    },
+    "impact": {
+      "eyebrow": "Autorité stratégique",
+      "title": "L’impact de la",
+      "titleHighlight": "croissance digitale",
+      "intro": "Le marketing de précision fait la différence entre un atelier discret et une destination mondiale. Les indicateurs modernes de découverte révèlent la puissance d’une présence stratégique.",
+      "metrics": {
+        "m1": {
+          "value": "78 %",
+          "body": "Des recherches mobiles locales se concluent par un <emphasis>achat en point de vente.</emphasis>"
+        },
+        "m2": {
+          "value": "9×",
+          "body": "Taux de closing plus élevé pour les leads SEO (14,6 %) par rapport aux méthodes sortantes (1,7 %)."
+        },
+        "m3": {
+          "value": "120 %",
+          "body": "Bond des conversions lors d’un léger gain d’étoiles (de 3,5 à 3,7)."
+        },
+        "m4": {
+          "value": "1 000 %",
+          "body": "Le SEO génère davantage de trafic que les réseaux sociaux organiques."
+        }
+      }
+    },
+    "footer": {
+      "rights": "Crataeis. Tous droits réservés.",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d’utilisation",
+      "backToTop": "Haut de page"
+    }
   }
 }
