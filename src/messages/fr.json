@@ -19,15 +19,15 @@
     },
     "hero": {
       "imageAlt": "Fond visuel abstrait haut de gamme",
-      "titleLine1": "Élever l’",
-      "titleHighlight": "artisan moderne.",
-      "description": "Nous comblons l’écart entre le geste artisanal brut et la précision technologique. Nous bâtissons des héritages numériques pour l’avant-garde créative.",
+      "titleLine1": "Savoir-faire numérique pour",
+      "titleHighlight": "l'artisan moderne.",
+      "description": "Une précision technique au service de l’âme créative. Nous bâtissons des héritages numériques pour les artisans qui placent la qualité au-dessus de tout.",
       "primaryCta": "Découvrir les services",
       "secondaryCta": "Réserver une consultation"
     },
     "services": {
-      "eyebrow": "Le cadre",
-      "title": "Nos services clés",
+      "eyebrow": "Notre façon de créer",
+      "title": "Nos services",
       "viewDetails": "Voir les détails",
       "items": {
         "web": {
@@ -53,7 +53,7 @@
       "eyebrow": "Préserver l’âme de votre métier",
       "title": "Une infrastructure pour le",
       "titleHighlight": "maître faiseur.",
-      "description": "Pour le céramiste au tour et le forgeron sur l’enclume, le monde numérique ressemble souvent à du bruit. Crataeis construit l’infrastructure invisible — vitrines, inventaire, SEO technique — pour que vous restiez concentré sur le feu et l’argile.",
+      "description": "Né dans un studio, un atelier ou une forge, votre artisanat mérite une présence numérique aussi intentionnelle que votre art. Nous bâtissons les systèmes — des sites web de niveau galerie à la visibilité en recherche locale — qui relient votre espace de travail physique au marché mondial.",
       "bullet1": "Vitrines galerie & portfolios curatoriaux en ligne",
       "bullet2": "Flux de travail adaptés aux pièces uniques physiques",
       "bullet3": "Infrastructure discrète & logistique",
