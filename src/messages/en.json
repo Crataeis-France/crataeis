@@ -3,6 +3,61 @@
     "title": "Crataeis",
     "description": "Crataeis – modern web experience"
   },
+  "ServicesPage": {
+    "metadata": {
+      "title": "Our Services"
+    },
+    "hero": {
+      "eyebrow": "Foundational Expertise",
+      "titleLine1": "Our Services:",
+      "titleLine2": "The Digital Foundation",
+      "description": "We provide the infrastructure that allows you to focus on your craft. Choose a service to explore our specialized solutions."
+    },
+    "picker": {
+      "activeInsight": "Active Insight",
+      "servicePrefix": "Service"
+    }
+  },
+  "WebDesignService": {
+    "imageAlt": "Close-up of artisan's hands working with raw clay on a potter's wheel, moody black and white photography, dramatic lighting.",
+    "headline": "Bespoke digital experiences built with precision.",
+    "body": "We merge performance with aesthetic excellence, ensuring your digital presence is as meticulously crafted as your physical products. Our development cycle focuses on the \"Maker's Intent\" — translating your vision into code.",
+    "f1Title": "Precision Performance",
+    "f1Body": "Sub-second load times tailored for high-end boutique experiences.",
+    "f2Title": "Artistic Fidelity",
+    "f2Body": "Maintaining brand integrity through pixel-perfect visual translations.",
+    "bookConsultation": "Book a Consultation"
+  },
+  "TechConsultingService": {
+    "imageAlt": "Close-up of artisan's hands working with raw clay on a potter's wheel, moody black and white photography, dramatic lighting.",
+    "headline": "Technology choices that respect how you work.",
+    "body": "We audit your stack, workflows, and integrations, then recommend a pragmatic roadmap—so your team spends less time fighting tools and more time making.",
+    "f1Title": "Stack clarity",
+    "f1Body": "Short, actionable guidance on the platforms that fit a small studio.",
+    "f2Title": "Operational calm",
+    "f2Body": "Fewer surprises: backups, access, and handover patterns that scale with you.",
+    "bookConsultation": "Book a Consultation"
+  },
+  "SeoAeoService": {
+    "imageAlt": "Close-up of artisan's hands working with raw clay on a potter's wheel, moody black and white photography, dramatic lighting.",
+    "headline": "Discovery that matches the quality of your work.",
+    "body": "Structured content, technical SEO, and AEO-oriented patterns so search engines—and answer engines—surface you when intent is highest.",
+    "f1Title": "Structured presence",
+    "f1Body": "Schema, metadata, and page models built for clarity and crawl efficiency.",
+    "f2Title": "Answer-ready content",
+    "f2Body": "Briefs and patterns tuned for how people (and models) summarize expertise.",
+    "bookConsultation": "Book a Consultation"
+  },
+  "GoogleBusinessService": {
+    "imageAlt": "Close-up of artisan's hands working with raw clay on a potter's wheel, moody black and white photography, dramatic lighting.",
+    "headline": "Local reputation that reflects your studio in real life.",
+    "body": "Profile completeness, review cadence, and local signals aligned with how collectors and clients actually find you.",
+    "f1Title": "Profile precision",
+    "f1Body": "Categories, services, and media aligned with your real-world offering.",
+    "f2Title": "Trust signals",
+    "f2Body": "Review and Q&A hygiene without sounding automated or generic.",
+    "bookConsultation": "Book a Consultation"
+  },
   "HomePage": {
     "metadata": {
       "title": "Digital Gallery of Expertise",
@@ -15,7 +70,11 @@
       "consultation": "Consultation",
       "languageEn": "EN",
       "languageFr": "FR",
-      "languageSelectAria": "Language"
+      "languageSelectAria": "Language",
+      "openMenuAria": "Open menu",
+      "closeMenuAria": "Close menu",
+      "menuDrawerTitle": "Menu",
+      "mainNavAria": "Main navigation"
     },
     "hero": {
       "imageAlt": "Abstract, high-end digital art backdrop",

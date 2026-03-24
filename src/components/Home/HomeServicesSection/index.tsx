@@ -49,7 +49,7 @@ export async function HomeServicesSection() {
             title={service.title}
             description={service.description}
             detailsLabel={t("services.viewDetails")}
-            href="#services"
+            href={`/services?service=${service.id}`}
           />
         ))}
       </div>

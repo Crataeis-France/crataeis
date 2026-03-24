@@ -35,20 +35,26 @@ export function LanguageToggle() {
         size="sm"
         aria-label={t("nav.languageSelectAria")}
         className={cn(
-          "h-8 min-w-[4.5rem] border-white/10 bg-transparent font-mkt-headline text-sm font-bold tracking-tight text-slate-400 shadow-none",
-          "hover:bg-white/5 hover:text-indigo-200",
+          "h-8 min-w-[4.5rem] border-white/10 bg-white/5 font-mkt-headline text-sm font-bold tracking-tight text-slate-300 shadow-none",
+          "dark:bg-white/5 dark:hover:bg-white/10",
+          "hover:bg-white/10 hover:text-indigo-200",
           "focus-visible:border-indigo-500/50 focus-visible:ring-indigo-500/30",
-          "data-[state=open]:text-indigo-200",
+          "data-[state=open]:bg-white/10 data-[state=open]:text-indigo-200",
+          "[&_svg]:text-slate-400",
         )}
       >
         <SelectValue />
       </SelectTrigger>
       <SelectContent
         position="popper"
-        className="z-[200] min-w-[var(--radix-select-trigger-width)]"
+        className="z-[200] min-w-[var(--radix-select-trigger-width)] border-white/10 bg-slate-900 text-slate-100 shadow-lg shadow-black/40"
       >
         {routing.locales.map((loc) => (
-          <SelectItem key={loc} value={loc}>
+          <SelectItem
+            key={loc}
+            value={loc}
+            className="text-slate-200 focus:bg-white/10 focus:text-slate-50"
+          >
             {labels[loc] ?? loc.toUpperCase()}
           </SelectItem>
         ))}

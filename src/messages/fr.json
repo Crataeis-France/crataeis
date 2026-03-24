@@ -3,6 +3,61 @@
     "title": "Crataeis",
     "description": "Crataeis – expérience web moderne"
   },
+  "ServicesPage": {
+    "metadata": {
+      "title": "Nos services"
+    },
+    "hero": {
+      "eyebrow": "Expertise fondamentale",
+      "titleLine1": "Nos services :",
+      "titleLine2": "Le socle numérique",
+      "description": "Nous fournissons l’infrastructure pour que vous vous concentriez sur votre métier. Choisissez un service pour explorer nos solutions."
+    },
+    "picker": {
+      "activeInsight": "Aperçu actif",
+      "servicePrefix": "Service"
+    }
+  },
+  "WebDesignService": {
+    "imageAlt": "Gros plan sur les mains d’un artisan modelant de l’argile au tour, photo noir et blanc dramatique.",
+    "headline": "Des expériences numériques sur mesure, construites avec précision.",
+    "body": "Nous allions performance et exigence esthétique pour que votre présence en ligne soit aussi soignée que vos pièces physiques. Notre cycle de développement s’appuie sur « l’intention du créateur » — traduire votre vision en code.",
+    "f1Title": "Performance précise",
+    "f1Body": "Des temps de chargement sous la seconde, adaptés aux expériences boutique haut de gamme.",
+    "f2Title": "Fidélité artistique",
+    "f2Body": "Préserver votre identité visuelle grâce à une intégration pixel-perfect.",
+    "bookConsultation": "Réserver une consultation"
+  },
+  "TechConsultingService": {
+    "imageAlt": "Gros plan sur les mains d’un artisan modelant de l’argile au tour, photo noir et blanc dramatique.",
+    "headline": "Des choix technologiques alignés sur votre façon de travailler.",
+    "body": "Nous auditons stack, flux et intégrations, puis proposons une feuille de route pragmatique — pour moins de friction outil et plus de création.",
+    "f1Title": "Clarté de stack",
+    "f1Body": "Recommandations courtes et actionnables pour les petits ateliers.",
+    "f2Title": "Sérénité opérationnelle",
+    "f2Body": "Sauvegardes, accès et passation conçus pour évoluer avec vous.",
+    "bookConsultation": "Réserver une consultation"
+  },
+  "SeoAeoService": {
+    "imageAlt": "Gros plan sur les mains d’un artisan modelant de l’argile au tour, photo noir et blanc dramatique.",
+    "headline": "Une visibilité à la hauteur de la qualité de votre travail.",
+    "body": "Contenu structuré, SEO technique et patterns orientés AEO pour que moteurs de recherche — et moteurs de réponses — vous trouvent au bon moment.",
+    "f1Title": "Présence structurée",
+    "f1Body": "Schémas, métadonnées et modèles de page pensés pour la clarté et le crawl.",
+    "f2Title": "Contenu « answer-ready »",
+    "f2Body": "Briefs et patterns adaptés à la façon dont on résume l’expertise.",
+    "bookConsultation": "Réserver une consultation"
+  },
+  "GoogleBusinessService": {
+    "imageAlt": "Gros plan sur les mains d’un artisan modelant de l’argile au tour, photo noir et blanc dramatique.",
+    "headline": "Une réputation locale fidèle à votre atelier.",
+    "body": "Profil complet, avis et signaux locaux alignés sur la façon dont clients et collectionneurs vous découvrent vraiment.",
+    "f1Title": "Profil au cordeau",
+    "f1Body": "Catégories, services et visuels alignés sur votre offre réelle.",
+    "f2Title": "Signaux de confiance",
+    "f2Body": "Hygiène des avis et FAQ sans ton robotique.",
+    "bookConsultation": "Réserver une consultation"
+  },
   "HomePage": {
     "metadata": {
       "title": "Galerie numérique d'expertise",
@@ -15,7 +70,11 @@
       "consultation": "Consultation",
       "languageEn": "EN",
       "languageFr": "FR",
-      "languageSelectAria": "Langue"
+      "languageSelectAria": "Langue",
+      "openMenuAria": "Ouvrir le menu",
+      "closeMenuAria": "Fermer le menu",
+      "menuDrawerTitle": "Menu",
+      "mainNavAria": "Navigation principale"
     },
     "hero": {
       "imageAlt": "Fond visuel abstrait haut de gamme",
