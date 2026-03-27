@@ -2,6 +2,8 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 // Content
 import { HOME_MEDIA } from "@/content/home";
+// i18n
+import { Link } from "@/i18n/navigation";
 
 export async function HomeHero() {
   const t = await getTranslations("HomePage");
@@ -31,12 +33,12 @@ export async function HomeHero() {
             {t("hero.description")}
           </p>
           <div className="flex flex-wrap gap-6">
-            <a
-              href="#services"
+            <Link
+              href="/services"
               className="rounded-lg bg-mkt-indigo-brand px-10 py-4 text-lg font-semibold text-white transition-all hover:bg-indigo-500"
             >
               {t("hero.primaryCta")}
-            </a>
+            </Link>
             <a
               href="#book-consultation"
               className="rounded-lg border border-white/10 bg-slate-800/50 px-10 py-4 text-lg font-semibold text-mkt-secondary transition-all hover:bg-slate-700"

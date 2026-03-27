@@ -16,6 +16,16 @@ export const SERVICE_IDS = [
 
 export type ServiceId = (typeof SERVICE_IDS)[number];
 
+/** `?service=` on `/services` — returns undefined if missing or invalid. */
+export function parseServiceIdParam(
+  raw: string | undefined,
+): ServiceId | undefined {
+  if (!raw) return undefined;
+  return (SERVICE_IDS as readonly string[]).includes(raw)
+    ? (raw as ServiceId)
+    : undefined;
+}
+
 export const IMPACT_METRIC_IDS = ["m1", "m2", "m3", "m4"] as const;
 
 export type ImpactMetricId = (typeof IMPACT_METRIC_IDS)[number];
