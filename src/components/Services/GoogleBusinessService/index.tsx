@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
-// i18n
-import { Link } from "@/i18n/navigation";
 // Components
+import { ContactEmailDialog } from "@/components/Contact/ContactEmailDialog";
 import { ServiceShowcaseShell } from "@/components/Services/ServiceShowcaseShell";
 // Content
 import { SERVICE_SHOWCASE_IMAGES } from "@/content/servicesGallery";
@@ -38,12 +37,11 @@ export async function GoogleBusinessService() {
           </p>
         </div>
       </div>
-      <Link
-        href="/#book-consultation"
-        className="w-fit self-start rounded-md bg-mkt-primary px-4 py-2.5 text-sm font-medium text-mkt-on-primary transition-all hover:bg-mkt-surface-tint active:scale-95"
-      >
-        {t("bookConsultation")}
-      </Link>
+      <ContactEmailDialog
+        initialServiceId="googleBusiness"
+        triggerLabel={t("bookConsultation")}
+        triggerClassName="h-auto w-fit cursor-pointer self-start rounded-md bg-mkt-primary px-4 py-2.5 text-sm font-medium text-mkt-surface-dim transition-all hover:bg-mkt-surface-tint active:scale-95"
+      />
     </ServiceShowcaseShell>
   );
 }

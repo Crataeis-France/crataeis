@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+// Content
+import { HOME_MEDIA } from "@/content/home";
 // Components
 import { HomeCraftSection } from "@/components/Home/HomeCraftSection";
 import { HomeHero } from "@/components/Home/HomeHero";
@@ -15,9 +17,28 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "HomePage.metadata" });
+  const tHome = await getTranslations({ locale, namespace: "HomePage" });
+  const title = t("title");
+  const description = t("description");
+  const hero = HOME_MEDIA.heroBackground;
+  const images = [
+    {
+      url: hero.src,
+      width: hero.width,
+      height: hero.height,
+      alt: tHome("hero.imageAlt"),
+    },
+  ];
   return {
-    title: t("title"),
-    description: t("description"),
+    title: { absolute: title },
+    description,
+    openGraph: { title, description, images },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [hero.src],
+    },
   };
 }
 

@@ -5,13 +5,8 @@
   },
   "ServicesPage": {
     "metadata": {
-      "title": "Our Services"
-    },
-    "hero": {
-      "eyebrow": "Foundational Expertise",
-      "titleLine1": "Our Services:",
-      "titleLine2": "The Digital Foundation",
-      "description": "We provide the infrastructure that allows you to focus on your craft. Choose a service to explore our specialized solutions."
+      "title": "Tech Solutions & Digital Strategy for Artisans",
+      "description": "From workflow automation to e-commerce strategy, explore Crataeis's specialized tech services designed to help artists spend less time on admin and more time creating."
     },
     "picker": {
       "activeInsight": "Active Insight",
@@ -60,21 +55,14 @@
   },
   "HomePage": {
     "metadata": {
-      "title": "Digital Gallery of Expertise",
-      "description": "Bridging craftsmanship and digital precision — gallery storefronts, consulting, and growth for creative studios."
+      "title": "Crataeis | Business & Tech Strategy for Artists & Artisans",
+      "description": "Empower your craft with professional business strategy. Crataeis helps artists and artisans integrate modern tech and streamlined operations to scale their creative work."
     },
     "nav": {
-      "services": "Services",
-      "insights": "Insights",
-      "about": "About",
       "consultation": "Consultation",
       "languageEn": "EN",
       "languageFr": "FR",
-      "languageSelectAria": "Language",
-      "openMenuAria": "Open menu",
-      "closeMenuAria": "Close menu",
-      "menuDrawerTitle": "Menu",
-      "mainNavAria": "Main navigation"
+      "languageSelectAria": "Language"
     },
     "hero": {
       "imageAlt": "Abstract, high-end digital art backdrop",
@@ -147,6 +135,168 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "backToTop": "Back to Top"
+    },
+    "contactDialog": {
+      "title": "Start a Consultation",
+      "description": "Tell us about your project and we will get back to you.",
+      "serviceOther": "Other",
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "service": "Service",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Your name",
+        "email": "you@example.com",
+        "service": "Select a service",
+        "message": "How can we help?"
+      },
+      "validation": {
+        "nameRequired": "Name is required.",
+        "emailRequired": "Email is required.",
+        "emailInvalid": "Please enter a valid email.",
+        "serviceRequired": "Service is required.",
+        "messageRequired": "Message is required."
+      },
+      "feedback": {
+        "sendFailed": "Failed to send message.",
+        "sendSuccess": "Message sent successfully.",
+        "sendUnexpectedError": "Something went wrong while sending your message."
+      },
+      "actions": {
+        "submit": "Send message",
+        "sending": "Sending..."
+      }
+    }
+  },
+  "PrivacyPage": {
+    "metadata": {
+      "title": "Privacy Policy",
+      "description": "How Crataeis collects, uses, and protects your data."
+    },
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: March 31, 2026",
+    "intro": "At Crataeis, I value your privacy as much as my own. This policy outlines exactly what happens to your data when you visit this site or reach out to me.",
+    "sections": {
+      "s1": {
+        "title": "1. Information Collected",
+        "body": "I only collect information that you voluntarily provide to me via the contact form on this website. This typically includes:",
+        "bullets": {
+          "b1": "Name",
+          "b2": "Email Address",
+          "b3": "Message Content (any project details you choose to share)"
+        }
+      },
+      "s2": {
+        "title": "2. How Your Data is Used",
+        "body": "I use this information solely to:",
+        "bullets": {
+          "b1": "Respond to your inquiries.",
+          "b2": "Discuss potential consulting engagements.",
+          "b3": "Provide services if we enter into a contract."
+        },
+        "note": "I do not use your information for unsolicited marketing or newsletters, and I will never sell your data to third parties."
+      },
+      "s3": {
+        "title": "3. Analytics (Privacy-First)",
+        "body": "This website uses Vercel Analytics to monitor site performance and traffic. Unlike traditional analytics tools:",
+        "bullets": {
+          "b1": "It does not use cookies.",
+          "b2": "It does not track you across other websites.",
+          "b3": "All data is de-identified and aggregated."
+        },
+        "note": "I use this purely to see which parts of my site are helpful to visitors."
+      },
+      "s4": {
+        "title": "4. Third-Party Service Providers",
+        "body": "To run this site, I use a few trusted services:",
+        "bullets": {
+          "b1": "Hosting: Vercel (where the site is stored).",
+          "b2": "Form Processing: Vercel Functions + Resend (to deliver your message to my inbox)."
+        }
+      },
+      "s5": {
+        "title": "5. Data Retention & Your Rights",
+        "body": "I keep your contact information for as long as we are in active communication or as required by law for business record-keeping.",
+        "rightsIntro": "You have the right to:",
+        "bullets": {
+          "b1": "Request a copy of the data I have about you.",
+          "b2": "Request that I delete your personal information from my records."
+        },
+        "note": "To exercise these rights, please contact me via the contact form on this website."
+      },
+      "s6": {
+        "title": "6. Security",
+        "body": "I use industry-standard SSL encryption (HTTPS) to ensure that the information you send through the contact form is encrypted during transit."
+      },
+      "s7": {
+        "title": "7. Contact",
+        "body": "If you have any questions about this policy, please reach out through the website contact modal."
+      }
+    }
+  },
+  "TermsPage": {
+    "metadata": {
+      "title": "Terms and Conditions",
+      "description": "Terms governing use of the Crataeis website and contact inquiries."
+    },
+    "title": "Terms and Conditions",
+    "lastUpdated": "Last Updated: March 31, 2026",
+    "summary": {
+      "title": "Summary (TL;DR)",
+      "b1": "Inquiries: Filling out our form is an inquiry, not a binding contract for services.",
+      "b2": "Data: We handle your info according to our <link>Privacy Policy</link>.",
+      "b3": "Conduct: Do not use our form to spam us or send malicious content.",
+      "b4": "Liability: We are not responsible if a technical glitch prevents your form from reaching us."
+    },
+    "sections": {
+      "s1": {
+        "title": "1. Introduction",
+        "body": "Welcome to our website. These Terms and Conditions govern your use of our site and the submission of inquiries through our contact forms. By using this website, you accept these terms in full."
+      },
+      "s2": {
+        "title": "2. Service Inquiries",
+        "intro": "Our website allows you to inquire about specific services. Please note:",
+        "bullets": {
+          "b1": "No Binding Agreement: Submission of an inquiry via the form does not create a formal contract or an obligation for us to provide services.",
+          "b2": "Accuracy: You agree to provide a valid email address and accurate information so that we may respond to you effectively."
+        }
+      },
+      "s3": {
+        "title": "3. Prohibited Use",
+        "intro": "When using our contact form, you agree not to:",
+        "bullets": {
+          "b1": "Submit any content that is unlawful, defamatory, or infringes on third-party intellectual property.",
+          "b2": "Use the \"Message\" field to upload or transmit viruses, Trojan horses, or malicious code.",
+          "b3": "Use automated systems (bots) to submit inquiries.",
+          "b4": "Use the form for unauthorized commercial solicitation (Spam)."
+        }
+      },
+      "s4": {
+        "title": "4. Intellectual Property",
+        "body": "Unless otherwise stated, we own the intellectual property rights for all material on this website. You may view and print pages for your own personal use, but you may not republish or redistribute our content without written consent."
+      },
+      "s5": {
+        "title": "5. Limitation of Liability",
+        "intro": "While we strive to ensure our website is always available, we are not liable for:",
+        "bullets": {
+          "b1": "Any delays or failures in form delivery due to technical issues, internet outages, or server maintenance.",
+          "b2": "Any loss or damage arising from your use of the website, to the maximum extent permitted by EU law."
+        }
+      },
+      "s6": {
+        "title": "6. Links to Other Policies",
+        "body": "Your use of the inquiry form is also governed by our <link>Privacy Policy</link>, which explains how we collect, use, and store your personal data (Name, Email, etc.) in accordance with GDPR."
+      },
+      "s7": {
+        "title": "7. Modifications",
+        "body": "We reserve the right to revise these terms at any time. Any changes will be posted on this page with an updated \"Last Updated\" date. Continued use of the site after changes constitutes acceptance of the new terms."
+      },
+      "s8": {
+        "title": "8. Governing Law & Jurisdiction",
+        "body": "These terms are governed by and construed in accordance with the laws of France. Any disputes relating to these terms will be subject to the exclusive jurisdiction of the courts in France."
+      }
     }
   }
 }

@@ -27,7 +27,7 @@ const copy: Record<
 > = {
   en: {
     path: "/en/services",
-    title: /Our Services/i,
+    title: /Tech Solutions & Digital Strategy for Artisans \| Crataeis/i,
     activeInsight: "Active Insight",
     servicePrefix: "Service",
     services: {
@@ -83,7 +83,7 @@ const copy: Record<
   },
   fr: {
     path: "/fr/services",
-    title: /Nos services/i,
+    title: /Solutions tech et stratégie numérique pour les artisans \| Crataeis/i,
     activeInsight: "Aperçu actif",
     servicePrefix: "Service",
     services: {
@@ -179,7 +179,9 @@ test.describe("Services page", () => {
           await expect(page.getByText(data.f1Body)).toBeVisible();
           await expect(page.getByRole("heading", { name: data.f2Title })).toBeVisible();
           await expect(page.getByText(data.f2Body)).toBeVisible();
-          await expect(page.getByRole("link", { name: data.cta })).toBeVisible();
+          await expect(
+            page.getByRole("button", { name: data.cta }),
+          ).toBeVisible();
           await expect(page.getByRole("img", { name: data.imageAlt })).toBeVisible();
           await expect(page.getByText(c.activeInsight)).toBeVisible();
         }

@@ -8,9 +8,6 @@ const copy: Record<
     path: string;
     pageTitle: RegExp;
     nav: {
-      services: string;
-      insights: string;
-      about: string;
       consultation: string;
       languageSelectAria: string;
     };
@@ -51,15 +48,16 @@ const copy: Record<
       terms: string;
       backToTop: string;
     };
+    /** Copy on /[locale]/services after hero primary CTA navigation */
+    servicesPage: {
+      activeInsight: string;
+    };
   }
 > = {
   en: {
     path: "/en",
-    pageTitle: /Digital Gallery of Expertise/i,
+    pageTitle: /Business & Tech Strategy for Artists & Artisans/i,
     nav: {
-      services: "Services",
-      insights: "Insights",
-      about: "About",
       consultation: "Consultation",
       languageSelectAria: "Language",
     },
@@ -131,14 +129,14 @@ const copy: Record<
       terms: "Terms of Service",
       backToTop: "Back to Top",
     },
+    servicesPage: {
+      activeInsight: "Active Insight",
+    },
   },
   fr: {
     path: "/fr",
-    pageTitle: /Galerie numérique d'expertise/i,
+    pageTitle: /Stratégie d’entreprise et tech pour artistes et artisans/i,
     nav: {
-      services: "Services",
-      insights: "Perspectives",
-      about: "À propos",
       consultation: "Consultation",
       languageSelectAria: "Langue",
     },
@@ -210,6 +208,9 @@ const copy: Record<
       terms: "Conditions d’utilisation",
       backToTop: "Haut de page",
     },
+    servicesPage: {
+      activeInsight: "Aperçu actif",
+    },
   },
 };
 
@@ -242,24 +243,11 @@ test.describe("Home page", () => {
           await expect(page).toHaveURL(new RegExp(`${c.path}/?$`));
         });
 
-        test("section nav links are visible", async ({ page }) => {
-          const nav = page.getByRole("navigation");
-          await expect(
-            nav.getByRole("link", { name: c.nav.services }),
-          ).toBeVisible();
-          await expect(
-            nav.getByRole("link", { name: c.nav.insights }),
-          ).toBeVisible();
-          await expect(
-            nav.getByRole("link", { name: c.nav.about }),
-          ).toBeVisible();
-        });
-
         test("consultation CTA in header", async ({ page }) => {
           await expect(
             page
               .getByRole("navigation")
-              .getByRole("link", { name: c.nav.consultation }),
+              .getByRole("button", { name: c.nav.consultation }),
           ).toBeVisible();
         });
 
@@ -285,7 +273,7 @@ test.describe("Home page", () => {
             page.getByRole("link", { name: c.hero.primaryCta }),
           ).toBeVisible();
           await expect(
-            page.getByRole("link", { name: c.hero.secondaryCta }),
+            page.getByRole("button", { name: c.hero.secondaryCta }),
           ).toBeVisible();
         });
 
@@ -295,9 +283,14 @@ test.describe("Home page", () => {
           ).toBeVisible();
         });
 
-        test("primary CTA scrolls to services section", async ({ page }) => {
+        test("primary CTA navigates to services page", async ({ page }) => {
           await page.getByRole("link", { name: c.hero.primaryCta }).click();
-          await expect(page.locator("#services")).toBeInViewport();
+          await expect(page).toHaveURL(
+            new RegExp(`${c.path}/services(?:\\?.*)?$`),
+          );
+          await expect(
+            page.getByText(c.servicesPage.activeInsight),
+          ).toBeVisible();
         });
       });
 

@@ -8,6 +8,11 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    # If these secrets are stored on a GitHub Environment, set `environment: <name>` here.
+    env:
+      RESEND_API: ${{ secrets.RESEND_API }}
+      CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+      NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

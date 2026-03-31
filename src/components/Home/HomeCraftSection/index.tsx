@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+// i18n
+import { Link } from "@/i18n/navigation";
 // Content
 import { HOME_MEDIA } from "@/content/home";
 
@@ -48,12 +50,12 @@ export async function HomeCraftSection() {
               </li>
             ))}
           </ul>
-          <a
-            href="#services"
+          <Link
+            href="/services"
             className="inline-block rounded-lg bg-mkt-indigo-brand px-8 py-3 font-medium text-white transition-all hover:bg-indigo-500"
           >
             {t("craft.cta")}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

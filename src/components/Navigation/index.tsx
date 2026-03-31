@@ -2,9 +2,8 @@ import { getTranslations } from "next-intl/server";
 // i18n
 import { Link } from "@/i18n/navigation";
 // Components
+import { ContactEmailDialog } from "@/components/Contact/ContactEmailDialog";
 import { LanguageToggle } from "@/components/Navigation/LanguageToggle";
-import { NavMainLinks } from "@/components/Navigation/NavMainLinks";
-import { NavMobileDrawer } from "@/components/Navigation/NavMobileDrawer";
 
 export async function Navigation() {
   const t = await getTranslations("HomePage");
@@ -20,19 +19,12 @@ export async function Navigation() {
             {"Crataeis"}
           </Link>
 
-          <NavMainLinks />
-
-          <div className="z-10 flex shrink-0 items-center gap-2 sm:gap-3">
-            <div className="hidden items-center gap-6 md:flex">
-              <LanguageToggle />
-              <Link
-                href="/#book-consultation"
-                className="rounded-lg bg-mkt-indigo-brand px-6 py-2 font-medium text-white transition-all hover:bg-indigo-500 active:scale-95"
-              >
-                {t("nav.consultation")}
-              </Link>
-            </div>
-            <NavMobileDrawer />
+          <div className="z-10 flex shrink-0 items-center gap-3">
+            <LanguageToggle />
+            <ContactEmailDialog
+              triggerLabel={t("nav.consultation")}
+              triggerClassName="hidden cursor-pointer rounded-lg bg-mkt-indigo-brand px-6 py-2 font-medium text-white transition-all hover:bg-indigo-500 active:scale-95 md:inline-flex"
+            />
           </div>
         </div>
       </nav>

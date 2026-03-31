@@ -4,6 +4,8 @@ import { getTranslations } from "next-intl/server";
 import { HOME_MEDIA } from "@/content/home";
 // i18n
 import { Link } from "@/i18n/navigation";
+// Components
+import { ContactEmailDialog } from "@/components/Contact/ContactEmailDialog";
 
 export async function HomeHero() {
   const t = await getTranslations("HomePage");
@@ -39,12 +41,10 @@ export async function HomeHero() {
             >
               {t("hero.primaryCta")}
             </Link>
-            <a
-              href="#book-consultation"
-              className="rounded-lg border border-white/10 bg-slate-800/50 px-10 py-4 text-lg font-semibold text-mkt-secondary transition-all hover:bg-slate-700"
-            >
-              {t("hero.secondaryCta")}
-            </a>
+            <ContactEmailDialog
+              triggerLabel={t("hero.secondaryCta")}
+              triggerClassName="h-auto cursor-pointer rounded-lg border border-white/10 bg-slate-800/50 px-10 py-4 text-lg font-semibold text-mkt-secondary transition-all hover:bg-slate-700"
+            />
           </div>
         </div>
       </div>

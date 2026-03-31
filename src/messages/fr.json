@@ -5,13 +5,8 @@
   },
   "ServicesPage": {
     "metadata": {
-      "title": "Nos services"
-    },
-    "hero": {
-      "eyebrow": "Expertise fondamentale",
-      "titleLine1": "Nos services :",
-      "titleLine2": "Le socle numérique",
-      "description": "Nous fournissons l’infrastructure pour que vous vous concentriez sur votre métier. Choisissez un service pour explorer nos solutions."
+      "title": "Solutions tech et stratégie numérique pour les artisans",
+      "description": "De l’automatisation des flux de travail à la stratégie e-commerce, découvrez les services tech spécialisés de Crataeis, pensés pour que les artistes passent moins de temps sur l’administratif et plus à créer."
     },
     "picker": {
       "activeInsight": "Aperçu actif",
@@ -60,21 +55,14 @@
   },
   "HomePage": {
     "metadata": {
-      "title": "Galerie numérique d'expertise",
-      "description": "Relier artisanat et précision numérique — vitrines, conseil et croissance pour les ateliers créatifs."
+      "title": "Crataeis | Stratégie d’entreprise et tech pour artistes et artisans",
+      "description": "Renforcez votre métier grâce à une stratégie d’entreprise professionnelle. Crataeis accompagne les artistes et les artisans pour intégrer des technologies modernes et des opérations rationalisées afin de faire évoluer leur travail créatif."
     },
     "nav": {
-      "services": "Services",
-      "insights": "Perspectives",
-      "about": "À propos",
       "consultation": "Consultation",
       "languageEn": "EN",
       "languageFr": "FR",
-      "languageSelectAria": "Langue",
-      "openMenuAria": "Ouvrir le menu",
-      "closeMenuAria": "Fermer le menu",
-      "menuDrawerTitle": "Menu",
-      "mainNavAria": "Navigation principale"
+      "languageSelectAria": "Langue"
     },
     "hero": {
       "imageAlt": "Fond visuel abstrait haut de gamme",
@@ -147,6 +135,168 @@
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d’utilisation",
       "backToTop": "Haut de page"
+    },
+    "contactDialog": {
+      "title": "Demarrer une consultation",
+      "description": "Parlez-nous de votre projet et nous vous recontacterons.",
+      "serviceOther": "Autre",
+      "labels": {
+        "name": "Nom",
+        "email": "Email",
+        "service": "Service",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Votre nom",
+        "email": "vous@exemple.com",
+        "service": "Selectionnez un service",
+        "message": "Comment pouvons-nous vous aider ?"
+      },
+      "validation": {
+        "nameRequired": "Le nom est requis.",
+        "emailRequired": "L'email est requis.",
+        "emailInvalid": "Veuillez saisir un email valide.",
+        "serviceRequired": "Le service est requis.",
+        "messageRequired": "Le message est requis."
+      },
+      "feedback": {
+        "sendFailed": "Echec de l'envoi du message.",
+        "sendSuccess": "Message envoye avec succes.",
+        "sendUnexpectedError": "Une erreur est survenue lors de l'envoi du message."
+      },
+      "actions": {
+        "submit": "Envoyer le message",
+        "sending": "Envoi..."
+      }
+    }
+  },
+  "PrivacyPage": {
+    "metadata": {
+      "title": "Politique de confidentialite",
+      "description": "Comment Crataeis collecte, utilise et protege vos donnees."
+    },
+    "title": "Politique de confidentialite",
+    "lastUpdated": "Derniere mise a jour : 31 mars 2026",
+    "intro": "Chez Crataeis, je respecte votre vie privee autant que la mienne. Cette politique explique clairement ce qu'il advient de vos donnees lorsque vous visitez ce site ou me contactez.",
+    "sections": {
+      "s1": {
+        "title": "1. Informations collectees",
+        "body": "Je collecte uniquement les informations que vous me fournissez volontairement via le formulaire de contact de ce site. Cela inclut generalement :",
+        "bullets": {
+          "b1": "Nom",
+          "b2": "Adresse e-mail",
+          "b3": "Contenu du message (tout detail de projet que vous choisissez de partager)"
+        }
+      },
+      "s2": {
+        "title": "2. Utilisation de vos donnees",
+        "body": "J'utilise ces informations uniquement pour :",
+        "bullets": {
+          "b1": "Repondre a vos demandes.",
+          "b2": "Discuter d'eventuelles missions de conseil.",
+          "b3": "Fournir des services si nous concluons un contrat."
+        },
+        "note": "Je n'utilise pas vos informations pour du marketing non sollicite ou des newsletters, et je ne vendrai jamais vos donnees a des tiers."
+      },
+      "s3": {
+        "title": "3. Analytique (respect de la vie privee)",
+        "body": "Ce site utilise Vercel Analytics pour surveiller les performances et le trafic. Contrairement aux outils analytiques traditionnels :",
+        "bullets": {
+          "b1": "Aucun cookie n'est utilise.",
+          "b2": "Vous n'etes pas suivi sur d'autres sites.",
+          "b3": "Toutes les donnees sont desidentifiees et agregées."
+        },
+        "note": "J'utilise ces informations uniquement pour comprendre quelles parties du site sont utiles aux visiteurs."
+      },
+      "s4": {
+        "title": "4. Prestataires tiers",
+        "body": "Pour faire fonctionner ce site, j'utilise quelques services de confiance :",
+        "bullets": {
+          "b1": "Hebergement : Vercel (ou le site est heberge).",
+          "b2": "Traitement du formulaire : Vercel Functions + Resend (pour transmettre votre message a ma boite de reception)."
+        }
+      },
+      "s5": {
+        "title": "5. Conservation des donnees et vos droits",
+        "body": "Je conserve vos informations de contact tant que nous sommes en communication active, ou selon les obligations legales de tenue de registres.",
+        "rightsIntro": "Vous avez le droit de :",
+        "bullets": {
+          "b1": "Demander une copie des donnees que je possede a votre sujet.",
+          "b2": "Demander la suppression de vos informations personnelles de mes dossiers."
+        },
+        "note": "Pour exercer ces droits, veuillez me contacter via le formulaire de contact de ce site."
+      },
+      "s6": {
+        "title": "6. Securite",
+        "body": "J'utilise un chiffrement SSL standard (HTTPS) afin de garantir que les informations envoyees via le formulaire de contact sont chiffrees pendant le transit."
+      },
+      "s7": {
+        "title": "7. Contact",
+        "body": "Si vous avez des questions sur cette politique, merci de me contacter via la fenetre de contact du site."
+      }
+    }
+  },
+  "TermsPage": {
+    "metadata": {
+      "title": "Conditions generales d'utilisation",
+      "description": "Conditions regissant l'utilisation du site Crataeis et les demandes de contact."
+    },
+    "title": "Conditions generales d'utilisation",
+    "lastUpdated": "Derniere mise a jour : 31 mars 2026",
+    "summary": {
+      "title": "Resume (TL;DR)",
+      "b1": "Demandes : remplir notre formulaire constitue une demande d'information, pas un contrat de prestation obligatoire.",
+      "b2": "Donnees : nous traitons vos informations conformement a notre <link>politique de confidentialite</link>.",
+      "b3": "Comportement : n'utilisez pas notre formulaire pour nous spammer ou envoyer du contenu malveillant.",
+      "b4": "Responsabilite : nous ne sommes pas responsables si un probleme technique empeche votre formulaire d'atteindre nos serveurs."
+    },
+    "sections": {
+      "s1": {
+        "title": "1. Introduction",
+        "body": "Bienvenue sur notre site. Ces conditions generales regissent votre utilisation du site et l'envoi de demandes via nos formulaires de contact. En utilisant ce site, vous acceptez pleinement ces conditions."
+      },
+      "s2": {
+        "title": "2. Demandes de services",
+        "intro": "Notre site vous permet de vous renseigner sur des services specifiques. Veuillez noter :",
+        "bullets": {
+          "b1": "Aucun engagement contractuel : l'envoi d'une demande via le formulaire ne cree ni contrat formel ni obligation de fournir des services.",
+          "b2": "Exactitude : vous acceptez de fournir une adresse e-mail valide et des informations exactes afin que nous puissions vous repondre efficacement."
+        }
+      },
+      "s3": {
+        "title": "3. Utilisations interdites",
+        "intro": "Lors de l'utilisation du formulaire de contact, vous vous engagez a ne pas :",
+        "bullets": {
+          "b1": "Soumettre un contenu illicite, diffamatoire ou portant atteinte aux droits de propriete intellectuelle de tiers.",
+          "b2": "Utiliser le champ « Message » pour telecharger ou transmettre des virus, chevaux de Troie ou code malveillant.",
+          "b3": "Utiliser des systemes automatises (robots) pour soumettre des demandes.",
+          "b4": "Utiliser le formulaire pour une sollicitation commerciale non autorisee (spam)."
+        }
+      },
+      "s4": {
+        "title": "4. Propriete intellectuelle",
+        "body": "Sauf indication contraire, nous detenons les droits de propriete intellectuelle sur l'ensemble des contenus de ce site. Vous pouvez consulter et imprimer des pages pour votre usage personnel, mais vous ne pouvez pas republier ou redistribuer nos contenus sans accord ecrit prealable."
+      },
+      "s5": {
+        "title": "5. Limitation de responsabilite",
+        "intro": "Bien que nous visons une disponibilite continue du site, nous ne saurions etre tenus responsables :",
+        "bullets": {
+          "b1": "Des retards ou echecs de transmission du formulaire dus a des problemes techniques, coupures Internet ou maintenance des serveurs.",
+          "b2": "De toute perte ou dommage resultant de votre utilisation du site, dans la limite autorisee par le droit de l'Union europeenne."
+        }
+      },
+      "s6": {
+        "title": "6. Liens vers d'autres politiques",
+        "body": "L'utilisation du formulaire de demande est egalement regie par notre <link>politique de confidentialite</link>, qui explique comment nous collectons, utilisons et conservons vos donnees personnelles (nom, e-mail, etc.) conformement au RGPD."
+      },
+      "s7": {
+        "title": "7. Modifications",
+        "body": "Nous nous reservons le droit de modifier ces conditions a tout moment. Les changements seront publies sur cette page avec une date de « Derniere mise a jour » actualisee. L'utilisation continue du site apres modification vaut acceptation des nouvelles conditions."
+      },
+      "s8": {
+        "title": "8. Droit applicable et juridiction",
+        "body": "Les presentes conditions sont regies et interpretees conformement au droit francais. Tout litige relatif aux presentes conditions releve de la competence exclusive des tribunaux de France."
+      }
     }
   }
 }
