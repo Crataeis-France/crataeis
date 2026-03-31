@@ -3,6 +3,8 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { Analytics } from "@vercel/analytics/next"
+// Components
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 // i18n
@@ -23,6 +25,7 @@ export async function generateMetadata({ params }: Props) {
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? ''),
     title: {
       default: t("title"),
       template: `%s | ${t("title")}`,
@@ -49,6 +52,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <NextIntlClientProvider messages={messages}>
       <Navigation />
       {children}
+      <Analytics />
       <Footer />
     </NextIntlClientProvider>
   );

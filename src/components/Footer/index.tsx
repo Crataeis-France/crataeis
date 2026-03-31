@@ -1,6 +1,9 @@
-import { BackToTop } from "@/components/Footer/BackToTop";
 import { getTranslations } from "next-intl/server";
+// i18n
 import { Link } from "@/i18n/navigation";
+// Components
+import { BackToTop } from "@/components/Footer/BackToTop";
+import { ContactEmailDialog } from "@/components/Contact/ContactEmailDialog";
 
 export async function Footer() {
   const t = await getTranslations("HomePage");
@@ -35,12 +38,10 @@ export async function Footer() {
           </Link>
         </div>
         <div className="flex items-center gap-8">
-          <button
-            type="button"
-            className="rounded-lg border border-white/10 bg-slate-800/50 px-6 py-2 text-sm font-medium text-mkt-secondary transition-all hover:bg-slate-700 active:scale-95"
-          >
-            {t("nav.consultation")}
-          </button>
+          <ContactEmailDialog
+            triggerLabel={t("nav.consultation")}
+            triggerClassName="h-auto cursor-pointer rounded-lg border border-white/10 bg-slate-800/50 px-6 py-2 text-sm font-medium text-mkt-secondary transition-all hover:bg-slate-700 active:scale-95"
+          />
           <BackToTop label={t("footer.backToTop")} />
         </div>
       </div>
