@@ -48,6 +48,10 @@ const copy: Record<
       terms: string;
       backToTop: string;
     };
+    /** Copy on /[locale]/services after hero primary CTA navigation */
+    servicesPage: {
+      activeInsight: string;
+    };
   }
 > = {
   en: {
@@ -125,6 +129,9 @@ const copy: Record<
       terms: "Terms of Service",
       backToTop: "Back to Top",
     },
+    servicesPage: {
+      activeInsight: "Active Insight",
+    },
   },
   fr: {
     path: "/fr",
@@ -201,6 +208,9 @@ const copy: Record<
       terms: "Conditions d’utilisation",
       backToTop: "Haut de page",
     },
+    servicesPage: {
+      activeInsight: "Aperçu actif",
+    },
   },
 };
 
@@ -273,9 +283,14 @@ test.describe("Home page", () => {
           ).toBeVisible();
         });
 
-        test("primary CTA scrolls to services section", async ({ page }) => {
+        test("primary CTA navigates to services page", async ({ page }) => {
           await page.getByRole("link", { name: c.hero.primaryCta }).click();
-          await expect(page.locator("#services")).toBeInViewport();
+          await expect(page).toHaveURL(
+            new RegExp(`${c.path}/services(?:\\?.*)?$`),
+          );
+          await expect(
+            page.getByText(c.servicesPage.activeInsight),
+          ).toBeVisible();
         });
       });
 

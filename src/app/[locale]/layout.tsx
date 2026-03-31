@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 // i18n
 import { routing } from "@/i18n/routing";
+import { getMetadataBase } from "@/lib/site-url";
 
 type Props = {
   children: React.ReactNode;
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props) {
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? ''),
+    metadataBase: getMetadataBase(),
     title: {
       default: t("title"),
       template: `%s | ${t("title")}`,
