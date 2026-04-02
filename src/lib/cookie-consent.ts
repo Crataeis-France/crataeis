@@ -62,15 +62,3 @@ export function writeConsentState(
     // Ignore storage failures (private mode / blocked storage).
   }
 }
-
-export function clearConsentState(opts?: { broadcast?: boolean }) {
-  if (typeof window === "undefined") return;
-  try {
-    window.localStorage.removeItem(STORAGE_KEY);
-    if (opts?.broadcast !== false) {
-      window.dispatchEvent(new CustomEvent("crataeis:cookie-consent"));
-    }
-  } catch {
-    // Ignore.
-  }
-}

@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import type { Page } from "@playwright/test";
 
-/** Must match `COOKIE_CONSENT_STORAGE_KEY` in `src/lib/cookie-consent.ts`. */
+/** Must match `STORAGE_KEY` in `src/lib/cookie-consent.ts`. */
 const STORAGE_KEY = "crataeis_cookie_consent";
 
 /**
@@ -21,7 +21,9 @@ test.describe("Cookie banner", () => {
     await gotoHomeWithConsentCleared(page);
     await expect(page.getByTestId("cookie-banner")).toBeVisible();
     await expect(page.getByTestId("cookie-banner-accept-all")).toBeVisible();
-    await expect(page.getByTestId("cookie-banner-reject-essential")).toBeVisible();
+    await expect(
+      page.getByTestId("cookie-banner-reject-essential"),
+    ).toBeVisible();
   });
 
   test("hides after accept all and does not show again after reload", async ({

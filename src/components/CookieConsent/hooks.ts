@@ -2,11 +2,16 @@
 
 import { useSyncExternalStore } from "react";
 
-export const useIsClient = () => {
-  const noopSubscribe = () => () => {};
+/** Stable identity for `useSyncExternalStore` (do not allocate per render). */
+const noopSubscribe = () => () => {};
+
+const getClientSnapshot = () => true;
+const getServerSnapshot = () => false;
+
+export function useIsClient() {
   return useSyncExternalStore(
     noopSubscribe,
-    () => true,
-    () => false,
+    getClientSnapshot,
+    getServerSnapshot,
   );
-};
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 // Components
 import { useCookieConsent } from "@/components/CookieConsent/CookieConsentProvider";
@@ -47,6 +47,11 @@ export function CookieSettingsDialog({
   const preferenceSummary = useMemo(() => {
     return analyticsEnabled ? t("summary.accepted") : t("summary.rejected");
   }, [analyticsEnabled, t]);
+
+  const dismissDialog = useCallback(() => {
+    setOpen(false);
+    onOpenChange?.(false);
+  }, [onOpenChange]);
 
   return (
     <Dialog
@@ -125,14 +130,20 @@ export function CookieSettingsDialog({
             type="button"
             variant="outline"
             className="cursor-pointer border-white/20 bg-white/5 text-slate-100 shadow-none hover:bg-white/10 hover:text-slate-50 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 dark:hover:text-slate-50"
-            onClick={() => rejectNonEssential()}
+            onClick={() => {
+              rejectNonEssential();
+              dismissDialog();
+            }}
           >
             {t("actions.rejectNonEssential")}
           </Button>
           <Button
             type="button"
             className="cursor-pointer bg-mkt-indigo-brand text-white hover:bg-indigo-500"
-            onClick={() => acceptAll()}
+            onClick={() => {
+              acceptAll();
+              dismissDialog();
+            }}
           >
             {t("actions.acceptAll")}
           </Button>
