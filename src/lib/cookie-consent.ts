@@ -1,3 +1,6 @@
+// Config
+import { COOKIE_CONSENT_STORAGE_KEY } from "@/config";
+
 export type CookieConsentPreferences = {
   necessary: true;
   analytics: boolean;
@@ -9,7 +12,6 @@ export type CookieConsentState = {
   updatedAt: string;
 };
 
-const STORAGE_KEY = "crataeis_cookie_consent";
 const CONSENT_VERSION = 1;
 
 export function getDefaultConsentState(): CookieConsentState {
@@ -23,7 +25,7 @@ export function getDefaultConsentState(): CookieConsentState {
 export function readConsentState(): CookieConsentState | null {
   if (typeof window === "undefined") return null;
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const raw = window.localStorage.getItem(COOKIE_CONSENT_STORAGE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as Partial<CookieConsentState> | null;
     if (!parsed || typeof parsed !== "object") return null;
@@ -54,23 +56,14 @@ export function writeConsentState(
   };
 
   try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(safe));
+    window.localStorage.setItem(
+      COOKIE_CONSENT_STORAGE_KEY,
+      JSON.stringify(safe),
+    );
     if (opts?.broadcast !== false) {
       window.dispatchEvent(new CustomEvent("crataeis:cookie-consent"));
     }
   } catch {
     // Ignore storage failures (private mode / blocked storage).
-  }
-}
-
-export function clearConsentState(opts?: { broadcast?: boolean }) {
-  if (typeof window === "undefined") return;
-  try {
-    window.localStorage.removeItem(STORAGE_KEY);
-    if (opts?.broadcast !== false) {
-      window.dispatchEvent(new CustomEvent("crataeis:cookie-consent"));
-    }
-  } catch {
-    // Ignore.
   }
 }

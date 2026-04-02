@@ -1,8 +1,7 @@
 import { test, expect } from "@playwright/test";
 import type { Page } from "@playwright/test";
-
-/** Must match `COOKIE_CONSENT_STORAGE_KEY` in `src/lib/cookie-consent.ts`. */
-const STORAGE_KEY = "crataeis_cookie_consent";
+// Config
+import { COOKIE_CONSENT_STORAGE_KEY } from "@/config";
 
 /**
  * Clears consent without using `addInitScript`: init scripts run before *every*
@@ -12,7 +11,7 @@ async function gotoHomeWithConsentCleared(page: Page) {
   await page.goto("/en");
   await page.evaluate((key) => {
     window.localStorage.removeItem(key);
-  }, STORAGE_KEY);
+  }, COOKIE_CONSENT_STORAGE_KEY);
   await page.reload({ waitUntil: "load" });
 }
 
@@ -21,7 +20,9 @@ test.describe("Cookie banner", () => {
     await gotoHomeWithConsentCleared(page);
     await expect(page.getByTestId("cookie-banner")).toBeVisible();
     await expect(page.getByTestId("cookie-banner-accept-all")).toBeVisible();
-    await expect(page.getByTestId("cookie-banner-reject-essential")).toBeVisible();
+    await expect(
+      page.getByTestId("cookie-banner-reject-essential"),
+    ).toBeVisible();
   });
 
   test("hides after accept all and does not show again after reload", async ({
@@ -42,7 +43,7 @@ test.describe("Cookie banner", () => {
 
     const raw = await page.evaluate((key) => {
       return window.localStorage.getItem(key);
-    }, STORAGE_KEY);
+    }, COOKIE_CONSENT_STORAGE_KEY);
 
     expect(raw).toBeTruthy();
     const data = JSON.parse(raw!) as {
@@ -70,7 +71,7 @@ test.describe("Cookie banner", () => {
 
     const raw = await page.evaluate((key) => {
       return window.localStorage.getItem(key);
-    }, STORAGE_KEY);
+    }, COOKIE_CONSENT_STORAGE_KEY);
 
     expect(raw).toBeTruthy();
     const data = JSON.parse(raw!) as {
@@ -98,7 +99,7 @@ test.describe("Cookie banner", () => {
             updatedAt: new Date().toISOString(),
           }),
         );
-      }, STORAGE_KEY);
+      }, COOKIE_CONSENT_STORAGE_KEY);
     });
 
     test("does not show the banner", async ({ page }) => {
