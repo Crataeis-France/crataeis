@@ -284,10 +284,13 @@ test.describe("Home page", () => {
         });
 
         test("primary CTA navigates to services page", async ({ page }) => {
-          await page.getByRole("link", { name: c.hero.primaryCta }).click();
-          await expect(page).toHaveURL(
-            new RegExp(`${c.path}/services(?:\\?.*)?$`),
+          const servicesUrl = new RegExp(
+            `${c.path}/services(?:\\?.*)?$`,
           );
+          await Promise.all([
+            page.waitForURL(servicesUrl, { timeout: 15_000 }),
+            page.getByRole("link", { name: c.hero.primaryCta }).click(),
+          ]);
           await expect(
             page.getByText(c.servicesPage.activeInsight),
           ).toBeVisible();
