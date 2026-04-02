@@ -134,6 +134,7 @@
       "rights": "Crataeis. Tous droits réservés.",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d’utilisation",
+      "cookieSettings": "Paramètres des cookies",
       "backToTop": "Haut de page"
     },
     "contactDialog": {
@@ -206,7 +207,7 @@
           "b2": "Vous n'etes pas suivi sur d'autres sites.",
           "b3": "Toutes les donnees sont desidentifiees et agregées."
         },
-        "note": "J'utilise ces informations uniquement pour comprendre quelles parties du site sont utiles aux visiteurs."
+        "note": "J'utilise ces informations uniquement pour comprendre quelles parties du site sont utiles aux visiteurs. Vous pouvez choisir d'activer ou non l'analytique via la bannière de paramètres ; votre choix est stocké localement pour éviter de redemander à chaque visite."
       },
       "s4": {
         "title": "4. Prestataires tiers",
@@ -297,6 +298,42 @@
         "title": "8. Droit applicable et juridiction",
         "body": "Les presentes conditions sont regies et interpretees conformement au droit francais. Tout litige relatif aux presentes conditions releve de la competence exclusive des tribunaux de France."
       }
+    }
+  }
+  ,
+  "CookieConsent": {
+    "banner": {
+      "title": "Préférences cookies",
+      "body": "Nous utilisons uniquement un stockage strictement nécessaire pour mémoriser votre choix. Vous pouvez activer l’analytique respectueuse de la vie privée en option. En savoir plus dans notre <privacyLink>politique de confidentialité</privacyLink>."
+    },
+    "dialog": {
+      "title": "Paramètres des cookies",
+      "description": "Contrôlez quelles fonctionnalités optionnelles sont activées sur cet appareil."
+    },
+    "categories": {
+      "necessary": {
+        "title": "Strictement nécessaire",
+        "alwaysOn": "Toujours activé",
+        "body": "Utilisé pour mémoriser vos préférences et faire fonctionner le site correctement."
+      },
+      "analytics": {
+        "title": "Analytique",
+        "toggleAria": "Activer ou désactiver l’analytique",
+        "body": "Nous aide à comprendre le trafic et les performances via Vercel Analytics (agrégé et désidentifié)."
+      }
+    },
+    "toggle": {
+      "on": "Activé",
+      "off": "Désactivé"
+    },
+    "actions": {
+      "acceptAll": "Tout accepter",
+      "rejectNonEssential": "Refuser le non essentiel",
+      "manage": "Gérer"
+    },
+    "summary": {
+      "accepted": "L’analytique est activée sur cet appareil.",
+      "rejected": "L’analytique est désactivée sur cet appareil."
     }
   }
 }

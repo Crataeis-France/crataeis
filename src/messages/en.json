@@ -134,6 +134,7 @@
       "rights": "Crataeis. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
+      "cookieSettings": "Cookie settings",
       "backToTop": "Back to Top"
     },
     "contactDialog": {
@@ -206,7 +207,7 @@
           "b2": "It does not track you across other websites.",
           "b3": "All data is de-identified and aggregated."
         },
-        "note": "I use this purely to see which parts of my site are helpful to visitors."
+        "note": "I use this purely to see which parts of my site are helpful to visitors. You can choose whether analytics is enabled via the cookie settings banner; your choice is stored locally so you don't have to answer every time."
       },
       "s4": {
         "title": "4. Third-Party Service Providers",
@@ -297,6 +298,42 @@
         "title": "8. Governing Law & Jurisdiction",
         "body": "These terms are governed by and construed in accordance with the laws of France. Any disputes relating to these terms will be subject to the exclusive jurisdiction of the courts in France."
       }
+    }
+  }
+  ,
+  "CookieConsent": {
+    "banner": {
+      "title": "Cookie preferences",
+      "body": "We only use strictly necessary storage to remember your choice. You can optionally enable privacy-first analytics. Learn more in our <privacyLink>Privacy Policy</privacyLink>."
+    },
+    "dialog": {
+      "title": "Cookie settings",
+      "description": "Control which optional features are enabled on this device."
+    },
+    "categories": {
+      "necessary": {
+        "title": "Strictly necessary",
+        "alwaysOn": "Always on",
+        "body": "Used to remember your cookie preferences and keep the site working as expected."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "toggleAria": "Toggle analytics cookies",
+        "body": "Helps us understand traffic and performance using Vercel Analytics (aggregated and de-identified)."
+      }
+    },
+    "toggle": {
+      "on": "On",
+      "off": "Off"
+    },
+    "actions": {
+      "acceptAll": "Accept all",
+      "rejectNonEssential": "Reject non-essential",
+      "manage": "Manage"
+    },
+    "summary": {
+      "accepted": "Analytics is enabled on this device.",
+      "rejected": "Analytics is disabled on this device."
     }
   }
 }
