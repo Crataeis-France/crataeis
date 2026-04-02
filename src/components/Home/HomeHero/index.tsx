@@ -37,6 +37,7 @@ export async function HomeHero() {
           <div className="flex flex-wrap gap-6">
             <Link
               href="/services"
+              data-testid="hero-primary-cta"
               className="rounded-lg bg-mkt-indigo-brand px-10 py-4 text-lg font-semibold text-white transition-all hover:bg-indigo-500"
             >
               {t("hero.primaryCta")}

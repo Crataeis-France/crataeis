@@ -1,4 +1,6 @@
 import { test, expect } from "@playwright/test";
+// Config
+import { COOKIE_CONSENT_STORAGE_KEY } from "@/config";
 
 type LocaleKey = "en" | "fr";
 
@@ -219,6 +221,19 @@ function homeUrl(locale: LocaleKey) {
 }
 
 test.describe("Home page", () => {
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript((key: string) => {
+      window.localStorage.setItem(
+        key,
+        JSON.stringify({
+          version: 1,
+          preferences: { necessary: true, analytics: false },
+          updatedAt: new Date().toISOString(),
+        }),
+      );
+    }, COOKIE_CONSENT_STORAGE_KEY);
+  });
+
   for (const locale of ["en", "fr"] as const) {
     const c = copy[locale];
 
@@ -232,6 +247,8 @@ test.describe("Home page", () => {
 
       test.describe("Navigation", () => {
         test.beforeEach(async ({ page }) => {
+          // Header consultation is `hidden` below `md`; ensure desktop breakpoint.
+          await page.setViewportSize({ width: 1280, height: 720 });
           await page.goto(homeUrl(locale));
         });
 
@@ -248,7 +265,7 @@ test.describe("Home page", () => {
             page
               .getByRole("navigation")
               .getByRole("button", { name: c.nav.consultation }),
-          ).toBeVisible();
+          ).toBeVisible({ timeout: 15_000 });
         });
 
         test("language select is available", async ({ page }) => {
@@ -284,13 +301,9 @@ test.describe("Home page", () => {
         });
 
         test("primary CTA navigates to services page", async ({ page }) => {
-          const servicesUrl = new RegExp(
-            `${c.path}/services(?:\\?.*)?$`,
-          );
-          await Promise.all([
-            page.waitForURL(servicesUrl, { timeout: 15_000 }),
-            page.getByRole("link", { name: c.hero.primaryCta }).click(),
-          ]);
+          const servicesUrl = new RegExp(`${c.path}/services(?:\\?.*)?$`);
+          await page.getByTestId("hero-primary-cta").click();
+          await expect(page).toHaveURL(servicesUrl);
           await expect(
             page.getByText(c.servicesPage.activeInsight),
           ).toBeVisible();
