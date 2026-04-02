@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 // Components
 import { BackToTop } from "@/components/Footer/BackToTop";
-import { ContactEmailDialog } from "@/components/Contact/ContactEmailDialog";
+import { CookieSettingsDialog } from "@/components/CookieConsent/CookieSettingsDialog";
 
 export async function Footer() {
   const t = await getTranslations("HomePage");
@@ -12,36 +12,39 @@ export async function Footer() {
   return (
     <footer
       id="book-consultation"
-      className="w-full scroll-mt-24 border-t border-white/5 bg-slate-950 px-8 py-12"
+      className="w-full scroll-mt-24 border-t border-white/5 bg-slate-950 px-4 py-10 sm:px-8 sm:py-12"
     >
-      <div className="mx-auto flex max-w-screen-2xl flex-col items-center justify-between gap-12 md:flex-row">
+      <div className="mx-auto flex max-w-screen-2xl flex-col items-center justify-between gap-10 sm:gap-12 md:flex-row md:items-start">
         <div className="flex flex-col items-center gap-3 md:items-start">
           <div className="font-mkt-headline text-xl font-bold tracking-tighter text-slate-200">
             Crataeis
           </div>
-          <div className="font-mkt-body text-xs leading-relaxed font-medium tracking-wide text-slate-500 uppercase">
+          <div className="max-w-[min(100%,20rem)] text-center font-mkt-body text-xs leading-relaxed font-medium tracking-wide text-slate-500 uppercase md:max-w-none md:text-left">
             © {year} {t("footer.rights")}
           </div>
         </div>
-        <div className="flex gap-10">
+        <nav
+          aria-label="Footer"
+          className="flex w-full max-w-md flex-wrap items-center justify-center gap-x-5 gap-y-2 sm:max-w-none sm:gap-x-8 md:w-auto md:flex-nowrap md:justify-start md:gap-x-10"
+        >
           <Link
             href="/privacy"
-            className="font-mkt-body text-sm text-slate-500 transition-colors hover:text-indigo-400"
+            className="inline-flex min-h-11 items-center font-mkt-body text-sm text-slate-500 transition-colors hover:text-indigo-400"
           >
             {t("footer.privacy")}
           </Link>
           <Link
             href="/terms"
-            className="font-mkt-body text-sm text-slate-500 transition-colors hover:text-indigo-400"
+            className="inline-flex min-h-11 items-center font-mkt-body text-sm text-slate-500 transition-colors hover:text-indigo-400"
           >
             {t("footer.terms")}
           </Link>
-        </div>
-        <div className="flex items-center gap-8">
-          <ContactEmailDialog
-            triggerLabel={t("nav.consultation")}
-            triggerClassName="h-auto cursor-pointer rounded-lg border border-white/10 bg-slate-800/50 px-6 py-2 text-sm font-medium text-mkt-secondary transition-all hover:bg-slate-700 active:scale-95"
+          <CookieSettingsDialog
+            triggerLabel={t("footer.cookieSettings")}
+            triggerClassName="inline-flex min-h-11 items-center font-mkt-body text-sm text-slate-500 transition-colors hover:text-indigo-400"
           />
+        </nav>
+        <div className="flex w-full items-center justify-center md:w-auto md:justify-end">
           <BackToTop label={t("footer.backToTop")} />
         </div>
       </div>

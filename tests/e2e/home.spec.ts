@@ -384,9 +384,6 @@ test.describe("Home page", () => {
             footer.getByRole("link", { name: c.footer.terms }),
           ).toBeVisible();
           await expect(
-            footer.getByRole("button", { name: c.nav.consultation }).first(),
-          ).toBeVisible();
-          await expect(
             footer.getByRole("button", { name: c.footer.backToTop }),
           ).toBeVisible();
         });

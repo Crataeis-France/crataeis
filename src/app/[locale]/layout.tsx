@@ -3,10 +3,10 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { Analytics } from "@vercel/analytics/next"
 // Components
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
+import { CookieConsent } from "@/components/CookieConsent";
 // i18n
 import { routing } from "@/i18n/routing";
 import { getMetadataBase } from "@/lib/site-url";
@@ -51,10 +51,11 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <Navigation />
-      {children}
-      <Analytics />
-      <Footer />
+      <CookieConsent>
+        <Navigation />
+        {children}
+        <Footer />
+      </CookieConsent>
     </NextIntlClientProvider>
   );
 }
