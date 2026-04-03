@@ -14,7 +14,6 @@ type Props = {
   activeId: ServiceId;
   onSelect: (id: ServiceId) => void;
   activeInsightLabel: string;
-  servicePrefix: string;
 };
 
 export function ServicePicker({
@@ -22,13 +21,12 @@ export function ServicePicker({
   activeId,
   onSelect,
   activeInsightLabel,
-  servicePrefix,
 }: Props) {
   return (
     <div className="flex w-full flex-col gap-3 sm:gap-4 lg:w-1/3">
       {items.map((item) => {
         const active = item.id === activeId;
-        const indexLabel = `${servicePrefix} ${String(item.index).padStart(2, "0")}`;
+
         return (
           <button
             key={item.id}
@@ -48,9 +46,7 @@ export function ServicePicker({
                   ? "text-mkt-on-primary-container"
                   : "text-mkt-on-tertiary-container",
               )}
-            >
-              {indexLabel}
-            </span>
+            ></span>
             <h3
               className={cn(
                 "text-balance font-mkt-headline text-lg font-bold transition-colors sm:text-xl lg:text-2xl",

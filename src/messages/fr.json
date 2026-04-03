@@ -106,6 +106,15 @@
       "bullet3": "Infrastructure discrète & logistique",
       "cta": "En savoir plus"
     },
+    "location": {
+      "eyebrow": "Vision mondiale",
+      "title": "Racines régionales.",
+      "titleHighlight": "Frontières numériques.",
+      "description": "Basée dans le Sud de la France, Crataeis opère à la croisée de l’artisanat traditionnel et de la frontière numérique mondiale. Nous traduisons la clarté et la précision méditerranéennes en architectures d’entreprise solides et en intégration technologique pour les créateurs du monde entier.",
+      "operationBase": "Base d’opération",
+      "region": "Région Nice & Monaco",
+      "imageAlt": "Photographie cinématique désaturée de la côte méditerranéenne et des silhouettes architecturales de la Côte d’Azur au crépuscule"
+    },
     "impact": {
       "eyebrow": "Autorité stratégique",
       "title": "L’impact de la",
@@ -299,8 +308,7 @@
         "body": "Les presentes conditions sont regies et interpretees conformement au droit francais. Tout litige relatif aux presentes conditions releve de la competence exclusive des tribunaux de France."
       }
     }
-  }
-  ,
+  },
   "CookieConsent": {
     "banner": {
       "title": "Préférences cookies",

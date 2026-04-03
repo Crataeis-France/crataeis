@@ -36,6 +36,15 @@ const copy: Record<
       cta: string;
       imageAlt: string;
     };
+    location: {
+      eyebrow: string;
+      title: string;
+      highlight: string;
+      description: RegExp;
+      operationBase: string;
+      region: string;
+      imageAlt: string;
+    };
     impact: {
       eyebrow: string;
       titlePart: string;
@@ -111,6 +120,17 @@ const copy: Record<
       cta: "Learn More",
       imageAlt:
         "Handcrafted ceramics on wooden racks, cinematic black and white",
+    },
+    location: {
+      eyebrow: "Global Vision",
+      title: "Regional Roots.",
+      highlight: "Digital Frontiers.",
+      description:
+        /Based in the South of France, Crataeis operates at the intersection/i,
+      operationBase: "Operation Base",
+      region: "Nice & Monaco Region",
+      imageAlt:
+        "Cinematic de-saturated photograph of the Mediterranean coastline and architectural silhouettes of the Côte d'Azur at dusk",
     },
     impact: {
       eyebrow: "Strategic Authority",
@@ -190,6 +210,17 @@ const copy: Record<
       cta: "En savoir plus",
       imageAlt:
         "Céramiques artisanales sur des étagères en bois, noir et blanc cinématographique",
+    },
+    location: {
+      eyebrow: "Vision mondiale",
+      title: "Racines régionales.",
+      highlight: "Frontières numériques.",
+      description:
+        /Basée dans le Sud de la France, Crataeis opère à la croisée/i,
+      operationBase: "Base d’opération",
+      region: "Région Nice & Monaco",
+      imageAlt:
+        "Photographie cinématique désaturée de la côte méditerranéenne et des silhouettes architecturales de la Côte d’Azur au crépuscule",
     },
     impact: {
       eyebrow: "Autorité stratégique",
@@ -355,6 +386,29 @@ test.describe("Home page", () => {
           ).toBeVisible();
           await expect(
             section.getByRole("img", { name: c.craft.imageAlt }),
+          ).toBeVisible();
+        });
+      });
+
+      test.describe("HomeLocationSection", () => {
+        test.beforeEach(async ({ page }) => {
+          await page.goto(homeUrl(locale));
+        });
+
+        test("copy, operation base, and image", async ({ page }) => {
+          const section = page.locator("#location");
+          await expect(section.getByText(c.location.eyebrow)).toBeVisible();
+          await expect(section.getByText(c.location.title)).toBeVisible();
+          await expect(section.getByText(c.location.highlight)).toBeVisible();
+          await expect(
+            section.getByText(c.location.description),
+          ).toBeVisible();
+          await expect(
+            section.getByText(c.location.operationBase),
+          ).toBeVisible();
+          await expect(section.getByText(c.location.region)).toBeVisible();
+          await expect(
+            section.getByRole("img", { name: c.location.imageAlt }),
           ).toBeVisible();
         });
       });

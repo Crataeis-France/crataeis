@@ -6,6 +6,7 @@ import { HOME_MEDIA } from "@/content/home";
 import { HomeCraftSection } from "@/components/Home/HomeCraftSection";
 import { HomeHero } from "@/components/Home/HomeHero";
 import { HomeImpactSection } from "@/components/Home/HomeImpactSection";
+import { HomeLocationSection } from "@/components/Home/HomeLocationSection";
 import { HomeServicesSection } from "@/components/Home/HomeServicesSection";
 // i18n
 import { routing } from "@/i18n/routing";
@@ -52,6 +53,7 @@ export default async function HomePage({ params }: Props) {
         <HomeHero />
         <HomeServicesSection />
         <HomeCraftSection />
+        <HomeLocationSection />
         <HomeImpactSection />
       </main>
     </div>

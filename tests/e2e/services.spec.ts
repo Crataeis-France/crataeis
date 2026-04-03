@@ -21,7 +21,6 @@ const copy: Record<
     path: string;
     title: RegExp;
     activeInsight: string;
-    servicePrefix: string;
     services: Record<ServiceId, ServiceContent>;
   }
 > = {
@@ -29,7 +28,6 @@ const copy: Record<
     path: "/en/services",
     title: /Tech Solutions & Digital Strategy for Artisans \| Crataeis/i,
     activeInsight: "Active Insight",
-    servicePrefix: "Service",
     services: {
       web: {
         pickerTitle: "Web Design & Development",
@@ -85,7 +83,6 @@ const copy: Record<
     path: "/fr/services",
     title: /Solutions tech et stratégie numérique pour les artisans \| Crataeis/i,
     activeInsight: "Aperçu actif",
-    servicePrefix: "Service",
     services: {
       web: {
         pickerTitle: "Design & développement web",
@@ -161,12 +158,10 @@ test.describe("Services page", () => {
       }) => {
         await page.goto(c.path);
 
-        for (let i = 0; i < orderedServiceIds.length; i++) {
-          const serviceId = orderedServiceIds[i];
+        for (const serviceId of orderedServiceIds) {
           const data = c.services[serviceId];
-          const pickerLabel = `${c.servicePrefix} ${String(i + 1).padStart(2, "0")}`;
           const pickerButton = page.getByRole("button", {
-            name: new RegExp(`${pickerLabel}[\\s\\S]*${data.pickerTitle}`, "i"),
+            name: data.pickerTitle,
           });
 
           await expect(pickerButton).toBeVisible();
