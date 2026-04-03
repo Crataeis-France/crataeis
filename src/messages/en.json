@@ -106,6 +106,15 @@
       "bullet3": "Invisible Infrastructure & Logistics Management",
       "cta": "Learn More"
     },
+    "location": {
+      "eyebrow": "Global Vision",
+      "title": "Regional Roots.",
+      "titleHighlight": "Digital Frontiers.",
+      "description": "Based in the South of France, Crataeis operates at the intersection of traditional artisanry and the global digital frontier. We translate the clarity and precision of the Mediterranean into robust business architectures and tech integration for creators worldwide.",
+      "operationBase": "Operation Base",
+      "region": "Nice & Monaco Region",
+      "imageAlt": "Cinematic de-saturated photograph of the Mediterranean coastline and architectural silhouettes of the Côte d'Azur at dusk"
+    },
     "impact": {
       "eyebrow": "Strategic Authority",
       "title": "The Impact of",
@@ -299,8 +308,7 @@
         "body": "These terms are governed by and construed in accordance with the laws of France. Any disputes relating to these terms will be subject to the exclusive jurisdiction of the courts in France."
       }
     }
-  }
-  ,
+  },
   "CookieConsent": {
     "banner": {
       "title": "Cookie preferences",
