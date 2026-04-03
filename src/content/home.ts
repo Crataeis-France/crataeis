@@ -1,10 +1,12 @@
 // Assets
 import craftImage from "@/assets/images/crataeis_artist_section.png";
 import heroBackground from "@/assets/images/crataeis_hero.png";
+import locationImage from "@/assets/images/location_hero.png";
 
 export const HOME_MEDIA = {
   heroBackground,
   craftImage,
+  locationImage,
 } as const;
 
 export const SERVICE_IDS = [
@@ -16,7 +18,6 @@ export const SERVICE_IDS = [
 
 export type ServiceId = (typeof SERVICE_IDS)[number];
 
-/** `?service=` on `/services` — returns undefined if missing or invalid. */
 export function parseServiceIdParam(
   raw: string | undefined,
 ): ServiceId | undefined {

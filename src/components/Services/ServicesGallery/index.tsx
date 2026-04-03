@@ -12,7 +12,6 @@ import { ServicePicker } from "@/components/Services/ServicesGallery/ServicePick
 type Props = {
   pickerItems: ServicePickerItem[];
   activeInsightLabel: string;
-  servicePrefix: string;
   panels: Record<ServiceId, React.ReactNode>;
   initialId?: ServiceId;
 };
@@ -20,7 +19,6 @@ type Props = {
 export function ServicesGallery({
   pickerItems,
   activeInsightLabel,
-  servicePrefix,
   panels,
   initialId = "web",
 }: Props) {
@@ -49,7 +47,6 @@ export function ServicesGallery({
         activeId={activeId}
         onSelect={selectService}
         activeInsightLabel={activeInsightLabel}
-        servicePrefix={servicePrefix}
       />
       {panels[activeId]}
     </div>

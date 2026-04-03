@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 // Content
-import {
-  parseServiceIdParam,
-  type ServiceId,
-} from "@/content/home";
+import { parseServiceIdParam, type ServiceId } from "@/content/home";
 // Components
 import { GoogleBusinessService } from "@/components/Services/GoogleBusinessService";
 import { SeoAeoService } from "@/components/Services/SeoAeoService";
@@ -103,7 +100,6 @@ const ServicesPage = async ({ searchParams }: PageProps) => {
           initialId={initialServiceId}
           pickerItems={orderPickerItems(titles)}
           activeInsightLabel={t("picker.activeInsight")}
-          servicePrefix={t("picker.servicePrefix")}
           panels={{
             web: <WebDesignService />,
             consulting: <TechConsultingService />,
